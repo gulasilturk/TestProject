@@ -57,14 +57,18 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-
-            Crouch();
-            speed = 1f;
+              Crouch();
+            speed = 3f;
         }
 
-        else if (Input.GetKeyDown(KeyCode.RightControl))
-
+          
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
             GoUp();
+            speed = 10f;
+        }
+
+        
     }
     void Crouch()
     {
