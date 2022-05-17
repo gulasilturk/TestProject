@@ -31,62 +31,70 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        #region Gravity
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundmask);
 
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
+        velocity.y += gravity * Time.deltaTime;
 
+        controller.Move(velocity * Time.deltaTime);
+        #endregion
+        #region Movement
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-
+        #endregion
+        #region Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-        
+
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+            #endregion
 
-        velocity.y += gravity * Time.deltaTime;
+            #region Crouch
+            if (Input.GetKeyDown(KeyCode.LeftControl))
+            {
+                Crouch();
+                speed = 3f;
+                jumpHeight = 0f;
+            }
 
-        controller.Move(velocity * Time.deltaTime);
 
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+            else if (Input.GetKeyUp(KeyCode.LeftControl))
+            {
+                GoUp();
+                speed = 5f;
+                jumpHeight = 1f;
+            }
+            #endregion
+
+            #region Run
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                speed = 7f;
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 5f;
+            }
+            #endregion
+    
+
+        void Crouch()
         {
-              Crouch();
-            speed = 3f;
-            jumpHeight = 0f;
+            playerCollider.height = reducedHeight;
+        }
+        void GoUp()
+        {
+            playerCollider.height = originalHeight;
         }
 
-          
-        else if (Input.GetKeyUp(KeyCode.LeftControl))
-        {
-            GoUp();
-            speed = 5f;
-            jumpHeight = 1f;
-        }
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            speed = 7f;
-        }
-        else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            speed = 5f;
-        }
-        
     }
-    void Crouch()
-    {
-        playerCollider.height = reducedHeight;
-    }
-    void GoUp()
-    {
-        playerCollider.height = originalHeight;
-    }
-
 }
