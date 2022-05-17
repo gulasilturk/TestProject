@@ -19,10 +19,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1904
-    height: 931
-  m_MinSize: {x: 300, y: 200}
-  m_MaxSize: {x: 24288, y: 16192}
+    width: 1920
+    height: 947
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
   controlID: -1
 --- !u!114 &2
@@ -33,26 +33,90 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 455, y: 354}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: -8693916549880196297, guid: 0000000000000000d000000000000000, type: 0}
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 308
-    y: 81
-    width: 1152
-    height: 422
+    x: 1078
+    y: 73
+    width: 386
+    height: 429
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 386, y: 408}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -193
+    m_HBaseRangeMax: 193
+    m_VBaseRangeMin: -204
+    m_VBaseRangeMax: 204
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 386
+      height: 408
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 193, y: 204}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -193
+      y: -204
+      width: 386
+      height: 408
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 386, y: 429}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -72,10 +136,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1454
-    height: 931
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 16192, y: 16192}
+    width: 1466
+    height: 947
+  m_MinSize: {x: 300, y: 200}
+  m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
   controlID: -1
 --- !u!114 &4
@@ -93,14 +157,15 @@ MonoBehaviour:
   m_Children:
   - {fileID: 5}
   - {fileID: 7}
+  - {fileID: 9}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1454
-    height: 443
-  m_MinSize: {x: 200, y: 100}
-  m_MaxSize: {x: 16192, y: 8096}
+    width: 1466
+    height: 450
+  m_MinSize: {x: 300, y: 100}
+  m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
   controlID: -1
 --- !u!114 &5
@@ -120,8 +185,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 300
-    height: 443
+    width: 302
+    height: 450
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -149,10 +214,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 81
-    width: 299
-    height: 422
+    x: 0
+    y: 73
+    width: 301
+    height: 429
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -160,25 +225,25 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 38fbffff
+      m_SelectedIDs: a4f8ffff
+      m_LastClickedID: -1884
+      m_ExpandedIDs: 06c5ffff38c9ffff38fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text (TMP)
+        m_OriginalName: Text (TMP)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -1884
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
+        m_ClientGUIView: {fileID: 5}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -196,24 +261,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AssetStoreWindow
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 300
+    x: 302
     y: 0
-    width: 1154
-    height: 443
-  m_MinSize: {x: 457, y: 375}
+    width: 776
+    height: 450
+  m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 2}
+  m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
-  - {fileID: 9}
-  - {fileID: 2}
-  m_Selected: 2
-  m_LastSelected: 1
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -234,10 +297,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 308
-    y: 81
-    width: 1152
-    height: 422
+    x: 302
+    y: 73
+    width: 774
+    height: 429
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -439,9 +502,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -8.717357, y: 2.1653607, z: -17.531868}
+    m_Target: {x: 49.84186, y: 49.591003, z: 0.47784}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 49.84186, y: 49.591003, z: 0.47784}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -488,20 +551,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.038604528, y: -0.32320806, z: 0.013197947, w: -0.94544953}
+    m_Target: {x: 0.13723525, y: -0.094940126, z: 0.0132212145, w: 0.985897}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: 0.13723424, y: -0.094939426, z: 0.013221117, w: 0.98588973}
   m_Size:
-    m_Target: 3.036342
+    m_Target: 103.1041
     speed: 2
-    m_Value: 10
+    m_Value: 103.1041
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 0.76062
+    m_SpeedNormalized: 0.38
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -527,90 +590,24 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
-    m_Tooltip: 
-  m_Pos:
+  m_Children: []
+  m_Position:
     serializedVersion: 2
-    x: 308
-    y: 81
-    width: 1152
-    height: 422
-  m_ViewDataDictionary: {fileID: 0}
-  m_OverlayCanvas:
-    m_LastAppliedPresetName: Default
-    m_SaveData: []
-  m_SerializedViewNames: []
-  m_SerializedViewValues: []
-  m_PlayModeViewName: GameView
-  m_ShowGizmos: 0
-  m_TargetDisplay: 0
-  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1152, y: 401}
-  m_TextureFilterMode: 0
-  m_TextureHideFlags: 61
-  m_RenderIMGUI: 1
-  m_EnterPlayModeBehavior: 0
-  m_UseMipMap: 0
-  m_VSyncEnabled: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    hZoomLockedByDefault: 0
-    vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -576
-    m_HBaseRangeMax: 576
-    m_VBaseRangeMin: -200.5
-    m_VBaseRangeMax: 200.5
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
-    m_EnableSliderZoomHorizontal: 0
-    m_EnableSliderZoomVertical: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 21
-      width: 1152
-      height: 401
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 576, y: 200.5}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -576
-      y: -200.5
-      width: 1152
-      height: 401
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1152, y: 422}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
-  m_XRRenderMode: 0
-  m_RenderTexture: {fileID: 0}
+    x: 1078
+    y: 0
+    width: 388
+    height: 450
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 2}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -627,9 +624,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 443
-    width: 1454
-    height: 488
+    y: 450
+    width: 1466
+    height: 497
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
@@ -637,7 +634,7 @@ MonoBehaviour:
   - {fileID: 11}
   - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -658,10 +655,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 524
-    width: 1453
-    height: 467
+    x: 0
+    y: 523
+    width: 1465
+    height: 476
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -679,22 +676,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/GitHub
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Plugins/GitHub
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: "C:\\Users\\Piga G\xFCl\\TestProject"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9a5c0000
-    m_LastClickedID: 23706
-    m_ExpandedIDs: 00000000605c0000705c000000ca9a3bffffff7f
+    m_SelectedIDs: 565c0000
+    m_LastClickedID: 23638
+    m_ExpandedIDs: 00000000565c0000366100005461000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -722,7 +719,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000605c0000
+    m_ExpandedIDs: 00000000565c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -747,9 +744,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: a4f8ffff
+    m_LastClickedInstanceID: -1884
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -798,10 +795,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2249
-    y: 726.5
-    width: 920
-    height: 250
+    x: 0
+    y: 523
+    width: 1465
+    height: 476
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -816,23 +813,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Window
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1454
+    x: 1466
     y: 0
-    width: 450
-    height: 931
-  m_MinSize: {x: 101, y: 121}
+    width: 454
+    height: 947
+  m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 15}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -853,10 +850,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1462
-    y: 81
-    width: 449
-    height: 917
+    x: 1466
+    y: 73
+    width: 453
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -894,22 +891,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1462
-    y: 81
-    width: 449
-    height: 910
+    x: 1466
+    y: 73
+    width: 453
+    height: 926
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
-  progressMessageClearTime: 23.8638914
+  progressMessageClearTime: -1
   notificationClearTime: -1
   timeSinceLastRotation: -1
   currentBranchAndRemoteHasUpdate: 0
-  currentTrackingStatusHasUpdate: 0
-  currentStatusEntriesHasUpdate: 0
-  repositoryProgressHasUpdate: 0
-  appManagerProgressHasUpdate: 0
+  currentTrackingStatusHasUpdate: 1
+  currentStatusEntriesHasUpdate: 1
+  repositoryProgressHasUpdate: 1
+  appManagerProgressHasUpdate: 1
   changeTab: 2
   activeTab: 2
   initProjectView:
@@ -1049,9 +1046,166 @@ MonoBehaviour:
       updatedTimeString: 
       cacheType: 0
   historyView:
-    currentLogHasUpdate: 0
-    currentTrackingStatusHasUpdate: 0
+    currentLogHasUpdate: 1
+    currentTrackingStatusHasUpdate: 1
     logEntries:
+    - commitID: 1e3b05268aab6abd8289784c4567e65b9bd5f741
+      mergeA: 
+      mergeB: 
+      authorName: gulasilturk
+      authorEmail: gul.asilturk@pigasoft.com
+      commitEmail: gul.asilturk@pigasoft.com
+      commitName: gulasilturk
+      summary: Player Controller
+      description: speed
+      timeString: 2022-05-17T11:08:16.000+03:00
+      commitTimeString: 2022-05-17T11:08:16.000+03:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Script\PlayerController.cs
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+        projectPath: Assets\Script\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 5baa3493c0a7b0b87a0895f2731ec8d866de31fd
+      mergeA: 
+      mergeB: 
+      authorName: gulasilturk
+      authorEmail: gul.asilturk@pigasoft.com
+      commitEmail: gul.asilturk@pigasoft.com
+      commitName: gulasilturk
+      summary: crouch and jump
+      description: Adjusted so that the character cannot jump when bent.
+      timeString: 2022-05-17T10:57:10.000+03:00
+      commitTimeString: 2022-05-17T10:57:10.000+03:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Script\PlayerController.cs
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+        projectPath: Assets\Script\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: fbeded39421cadc3b714dec9ce29c7512eab9958
+      mergeA: 
+      mergeB: 
+      authorName: gulasilturk
+      authorEmail: gul.asilturk@pigasoft.com
+      commitEmail: gul.asilturk@pigasoft.com
+      commitName: gulasilturk
+      summary: player controller
+      description: speed regulation
+      timeString: 2022-05-17T10:51:20.000+03:00
+      commitTimeString: 2022-05-17T10:51:20.000+03:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Script\PlayerController.cs
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+        projectPath: Assets\Script\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: 6aa09883206d94e630422f4b6efe25fe6aae786e
+      mergeA: 
+      mergeB: 
+      authorName: gulasilturk
+      authorEmail: gul.asilturk@pigasoft.com
+      commitEmail: gul.asilturk@pigasoft.com
+      commitName: gulasilturk
+      summary: Player Contrroller
+      description: Adjusted the crouch movement. The character's speed is reduced
+        when crouching occurs.
+      timeString: 2022-05-17T10:26:53.000+03:00
+      commitTimeString: 2022-05-17T10:26:53.000+03:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Script\PlayerController.cs
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+        projectPath: Assets\Script\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+    - commitID: e3bb964fb431b2de6262fec204b155fd3fe1ee24
+      mergeA: 
+      mergeB: 
+      authorName: gulasilturk
+      authorEmail: gul.asilturk@pigasoft.com
+      commitEmail: gul.asilturk@pigasoft.com
+      commitName: gulasilturk
+      summary: player controller
+      description: added character jumping and moving left and right
+      timeString: 2022-05-17T09:46:43.000+03:00
+      commitTimeString: 2022-05-17T09:46:43.000+03:00
+      changes:
+      - path: Assets\Scenes\SampleScene.unity
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+        projectPath: Assets\Scenes\SampleScene.unity
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: Assets\Script\PlayerController.cs
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+        projectPath: Assets\Script\PlayerController.cs
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\DynamicsManager.asset
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\DynamicsManager.asset"
+        projectPath: ProjectSettings\DynamicsManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\InputManager.asset
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\InputManager.asset"
+        projectPath: ProjectSettings\InputManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: ProjectSettings\TagManager.asset
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\TagManager.asset"
+        projectPath: ProjectSettings\TagManager.asset
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
+      - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Layouts\\CurrentMaximizeLayout.dwlt"
+        projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.index
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Search.index"
+        projectPath: UserSettings\Search.index
+        originalPath: 
+        indexStatus: 4
+        workTreeStatus: 0
+      - path: UserSettings\Search.settings
+        fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Search.settings"
+        projectPath: UserSettings\Search.settings
+        originalPath: 
+        indexStatus: 3
+        workTreeStatus: 0
     - commitID: f16313fa6cb090da6158bc8002534b5a6f1426d4
       mergeA: 
       mergeB: 
@@ -11473,16 +11627,173 @@ MonoBehaviour:
         originalPath: 
         indexStatus: 4
         workTreeStatus: 0
-    statusAhead: 1
+    statusAhead: 0
     lastLogChangedEvent:
-      updatedTimeString: 2022-05-17T09:37:08.131+03:00
+      updatedTimeString: 2022-05-17T16:37:08.734+03:00
       cacheType: 3
     lastTrackingStatusChangedEvent:
-      updatedTimeString: 2022-05-17T09:37:07.992+03:00
+      updatedTimeString: 0001-01-01T00:00:00.000+00:00
       cacheType: 5
     historyControl:
       scroll: {x: 0, y: 0}
       entries:
+      - commitID: 1e3b05268aab6abd8289784c4567e65b9bd5f741
+        mergeA: 
+        mergeB: 
+        authorName: gulasilturk
+        authorEmail: gul.asilturk@pigasoft.com
+        commitEmail: gul.asilturk@pigasoft.com
+        commitName: gulasilturk
+        summary: Player Controller
+        description: speed
+        timeString: 2022-05-17T11:08:16.000+03:00
+        commitTimeString: 2022-05-17T11:08:16.000+03:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Script\PlayerController.cs
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+          projectPath: Assets\Script\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 5baa3493c0a7b0b87a0895f2731ec8d866de31fd
+        mergeA: 
+        mergeB: 
+        authorName: gulasilturk
+        authorEmail: gul.asilturk@pigasoft.com
+        commitEmail: gul.asilturk@pigasoft.com
+        commitName: gulasilturk
+        summary: crouch and jump
+        description: Adjusted so that the character cannot jump when bent.
+        timeString: 2022-05-17T10:57:10.000+03:00
+        commitTimeString: 2022-05-17T10:57:10.000+03:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Script\PlayerController.cs
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+          projectPath: Assets\Script\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: fbeded39421cadc3b714dec9ce29c7512eab9958
+        mergeA: 
+        mergeB: 
+        authorName: gulasilturk
+        authorEmail: gul.asilturk@pigasoft.com
+        commitEmail: gul.asilturk@pigasoft.com
+        commitName: gulasilturk
+        summary: player controller
+        description: speed regulation
+        timeString: 2022-05-17T10:51:20.000+03:00
+        commitTimeString: 2022-05-17T10:51:20.000+03:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Script\PlayerController.cs
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+          projectPath: Assets\Script\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: 6aa09883206d94e630422f4b6efe25fe6aae786e
+        mergeA: 
+        mergeB: 
+        authorName: gulasilturk
+        authorEmail: gul.asilturk@pigasoft.com
+        commitEmail: gul.asilturk@pigasoft.com
+        commitName: gulasilturk
+        summary: Player Contrroller
+        description: Adjusted the crouch movement. The character's speed is reduced
+          when crouching occurs.
+        timeString: 2022-05-17T10:26:53.000+03:00
+        commitTimeString: 2022-05-17T10:26:53.000+03:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Script\PlayerController.cs
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+          projectPath: Assets\Script\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+      - commitID: e3bb964fb431b2de6262fec204b155fd3fe1ee24
+        mergeA: 
+        mergeB: 
+        authorName: gulasilturk
+        authorEmail: gul.asilturk@pigasoft.com
+        commitEmail: gul.asilturk@pigasoft.com
+        commitName: gulasilturk
+        summary: player controller
+        description: added character jumping and moving left and right
+        timeString: 2022-05-17T09:46:43.000+03:00
+        commitTimeString: 2022-05-17T09:46:43.000+03:00
+        changes:
+        - path: Assets\Scenes\SampleScene.unity
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Scenes\\SampleScene.unity"
+          projectPath: Assets\Scenes\SampleScene.unity
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: Assets\Script\PlayerController.cs
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\Assets\\Script\\PlayerController.cs"
+          projectPath: Assets\Script\PlayerController.cs
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\DynamicsManager.asset
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\DynamicsManager.asset"
+          projectPath: ProjectSettings\DynamicsManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\InputManager.asset
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\InputManager.asset"
+          projectPath: ProjectSettings\InputManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: ProjectSettings\TagManager.asset
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\ProjectSettings\\TagManager.asset"
+          projectPath: ProjectSettings\TagManager.asset
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
+        - path: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Layouts\\CurrentMaximizeLayout.dwlt"
+          projectPath: UserSettings\Layouts\CurrentMaximizeLayout.dwlt
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.index
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Search.index"
+          projectPath: UserSettings\Search.index
+          originalPath: 
+          indexStatus: 4
+          workTreeStatus: 0
+        - path: UserSettings\Search.settings
+          fullPath: "C:\\Users\\Piga G\xFCl\\TestProject\\UserSettings\\Search.settings"
+          projectPath: UserSettings\Search.settings
+          originalPath: 
+          indexStatus: 3
+          workTreeStatus: 0
       - commitID: f16313fa6cb090da6158bc8002534b5a6f1426d4
         mergeA: 
         mergeB: 
@@ -21904,7 +22215,7 @@ MonoBehaviour:
           originalPath: 
           indexStatus: 4
           workTreeStatus: 0
-      statusAhead: 1
+      statusAhead: 0
       selectedIndex: -1
     selectedEntry:
       commitID: 
@@ -22032,7 +22343,7 @@ MonoBehaviour:
   currentRemoteName: origin
   currentBranch: Character
   currentRemoteUrl: https://github.com/gulasilturk/TestProject.git
-  statusAhead: 1
+  statusAhead: 0
   statusBehind: 0
   hasItemsToCommit: 1
   isTrackingRemoteBranch: 1
@@ -22045,13 +22356,13 @@ MonoBehaviour:
     m_Image: {fileID: 0}
     m_Tooltip: Url of the origin remote
   lastCurrentBranchAndRemoteChangedEvent:
-    updatedTimeString: 2022-05-17T09:37:07.980+03:00
+    updatedTimeString: 2022-05-17T13:43:35.216+03:00
     cacheType: 1
   lastTrackingStatusChangedEvent:
-    updatedTimeString: 2022-05-17T09:37:07.992+03:00
+    updatedTimeString: 2022-05-17T13:56:05.217+03:00
     cacheType: 5
   lastStatusEntriesChangedEvent:
-    updatedTimeString: 2022-05-17T09:37:16.229+03:00
+    updatedTimeString: 2022-05-17T13:56:04.762+03:00
     cacheType: 6
   pullButtonContent:
     m_Text: Pull
