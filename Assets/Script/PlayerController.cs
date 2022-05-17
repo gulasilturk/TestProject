@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         {
               Crouch();
             speed = 3f;
+            jumpHeight = 0f;
         }
 
           
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
         {
             GoUp();
             speed = 10f;
+            jumpHeight = 1f;
         }
 
         
