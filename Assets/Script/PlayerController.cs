@@ -14,9 +14,21 @@ public class PlayerController : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundmask;
 
+    CharacterController playerCollider;
+    float originalHeight;
+    public float reducedHeight;
+
+
+
     Vector3 velocity;
     bool isGrounded;
     // Update is called once per frame
+    private void Start()
+    {
+        playerCollider = GetComponent<CharacterController>();
+        originalHeight = playerCollider.height;
+    }
+
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundmask);
@@ -35,12 +47,32 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            Debug.Log(Input.GetButtonDown("Jump")&&isGrounded);
+        
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+
+            Crouch();
+            speed = 1f;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.RightControl))
+
+            GoUp();
     }
+    void Crouch()
+    {
+        playerCollider.height = reducedHeight;
+    }
+    void GoUp()
+    {
+        playerCollider.height = originalHeight;
+    }
+
 }
