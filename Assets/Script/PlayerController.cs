@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static CharacterController CharacterController;
     public CharacterController controller;
 
     public float speed = 12f;

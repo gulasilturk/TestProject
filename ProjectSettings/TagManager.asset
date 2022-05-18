@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fire
+  - Door
+  - Lamp
   layers:
   - Default
   - TransparentFX
