@@ -7,7 +7,7 @@ public class LampController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.T))
 
             
             
@@ -15,5 +15,6 @@ public class LampController : MonoBehaviour
                 
             
     }
+  
 
 }

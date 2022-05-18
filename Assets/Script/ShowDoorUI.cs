@@ -18,4 +18,11 @@ public class ShowDoorUI : MonoBehaviour
 
         }
     }
+    private void OnTriggerExit(Collider player)
+    {
+        if (player.CompareTag("Player"))
+        {
+            ObjectUI.gameObject.SetActive(false);
+        }
+    }
 }

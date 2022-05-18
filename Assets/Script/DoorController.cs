@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-   
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Animator>().enabled = false;
+        animator = GetComponent<Animator>();
+     
+        animator.SetBool("ispassed", false);
     }
 
     // Update is called once per frame
@@ -16,7 +18,13 @@ public class DoorController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            GetComponent<Animator>().enabled = true;
+            animator.SetBool("ispassed", true);
+      
         } 
     }
+    private void OnTriggerExit(Collider other)
+    {
+        animator.SetBool("ispassed", false);
+    }
+
 }
