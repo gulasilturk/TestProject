@@ -7,6 +7,7 @@ TagManager:
   - Fire
   - Door
   - Lamp
+  - enemy
   layers:
   - Default
   - TransparentFX

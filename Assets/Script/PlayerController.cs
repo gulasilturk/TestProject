@@ -6,10 +6,13 @@ public class PlayerController : MonoBehaviour
 {
     public static CharacterController CharacterController;
     public CharacterController controller;
+    public GameObject Bullet;
+    public Transform cam;
 
     public float speed = 12f;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
+
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -18,7 +21,7 @@ public class PlayerController : MonoBehaviour
     CharacterController playerCollider;
     float originalHeight;
     public float reducedHeight;
-
+    float zaman;
 
 
     Vector3 velocity;
@@ -28,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         playerCollider = GetComponent<CharacterController>();
         originalHeight = playerCollider.height;
+        zaman = 0;
     }
 
     void Update()
@@ -51,42 +55,67 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
         #endregion
+        #region Shooter
+
+
+        if (Input.GetKey(KeyCode.B))
+        {
+            if (zaman >= 0.5)
+            {
+                GameObject ShooterObject = Instantiate(Bullet, new Vector3(transform.position.x,1f,transform.position.z), Quaternion.Euler(cam.transform.eulerAngles.x, cam.transform.eulerAngles.y, cam.transform.eulerAngles.z));
+                ShooterObject.GetComponent<SphereCollider>().isTrigger = true;
+                //ornekobjem.gameObject.CompareTag("Fire");
+                ShooterObject.AddComponent<Rigidbody>();
+                ShooterObject.GetComponent<Rigidbody>().isKinematic = true;
+                zaman = 0;
+            }
+            else
+            {
+                zaman += Time.deltaTime;
+            }
+        }
+
+
+
+
+
+        #endregion
         #region Jump
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
 
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
-            #endregion
+        #endregion
 
-            #region Crouch
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-            {
-                Crouch();
-                speed = 3f;
-                jumpHeight = 0f;
-            }
+        #region Crouch
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Crouch();
+            speed = 3f;
+            jumpHeight = 0f;
+        }
 
 
-            else if (Input.GetKeyUp(KeyCode.LeftControl))
-            {
-                GoUp();
-                speed = 5f;
-                jumpHeight = 1f;
-            }
-            #endregion
+        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            GoUp();
+            speed = 5f;
+            jumpHeight = 1f;
+        }
+        #endregion
 
-            #region Run
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                speed = 7f;
-            }
-            else if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                speed = 5f;
-            }
-            #endregion
-    
+        #region Run
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 7f;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 5f;
+        }
+        #endregion
+
 
         void Crouch()
         {

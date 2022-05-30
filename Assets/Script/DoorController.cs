@@ -5,42 +5,48 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     Animator animator;
-    
+    public bool ishere;
+ 
+
     // Start is called before the first frame update
     void Start()
     {
+
         animator = GetComponent<Animator>();
-     
+
         animator.SetBool("ispassed", true);
     }
 
 
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.E))
-    //    {
-    //        animator.SetBool("ispassed", true);
-
-    //    }
-    //}
-
-    void OnTriggerStay(Collider other)
+    void Update()
     {
+        ishere = true;
 
-            if (Input.GetKeyDown(KeyCode.E))
-         {
-            if (other.gameObject.tag == "Player")
-            {
-                animator.SetBool("ispassed", false);
+        if (Input.GetKeyDown(KeyCode.E) && ishere)
+        {
 
-            }
+            animator.SetBool("ispassed", false);
+            Debug.Log("!");
         }
-      
     }
 
-        private void OnTriggerExit(Collider other)
-    {
-        animator.SetBool("ispassed", true);
-    }
+
+
+
+
 
 }
+//   private void OnTriggerExit(Collider other)
+//    {
+       
+//            if (!ishere||Input.GetKeyDown(KeyCode.E))
+//            {
+//            Debug.Log("&");
+//            animator.SetBool("ispassed", true);
+//            }
+
+        
+   
+//    }
+
+//}

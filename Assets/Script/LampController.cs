@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class LampController : MonoBehaviour
 {
+    public static LampController lampcontroller;
+
     private bool lampIsClosed = true;
 
-    void OnTriggerStay(Collider other)
+    private void Start()
+    {
+
+    }
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (other.gameObject.tag == "Player")
-            {
+          
                 OpenLamp();
-   //GetComponent<Renderer>().material.color = new Color(255, 255, 0);
-            }
+                //GetComponent<Renderer>().material.color = new Color(255, 255, 0);
+            
         }
        
       
